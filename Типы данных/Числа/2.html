@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // Ввод числового значения
+        "use strict";
+
+        function readNumber() {
+            while (true) {
+                let num = prompt("Введите число");
+                if (num === null) {
+                    return num;
+                }
+                if (isFinite(+num) && num !== '') {
+                    return +num;
+                }
+            }
+        }
+
+        alert(readNumber());
+    </script>
+</body>
+</html>

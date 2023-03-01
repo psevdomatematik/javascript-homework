@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // Сумма введённых чисел
+        "use strict";
+
+        function  sumInput() {
+            const numbers = [];
+
+            while (true) {
+                const elem = prompt("Введите число:");
+                if (!isFinite(elem) || elem == null || elem.trim() === "") {
+                    break;
+                }
+                numbers.push(+elem);
+            }
+
+            let sum = 0;
+
+            for (const elem of numbers) {
+                sum += elem;
+            }
+
+            return sum;
+        }
+
+        alert(sumInput());
+    </script>
+</body>
+</html>

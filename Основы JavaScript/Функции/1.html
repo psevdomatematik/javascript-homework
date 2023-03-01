@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    // Перепишите функцию, используя оператор '?' или '||'
+    "use strict";
+
+    function checkAge1(age) {
+      return age > 18 ? true : confirm('Родители разрешили?');
+    }
+
+    function checkAge2(age) {
+      return age > 18 || confirm('Родители разрешили?');
+    }
+
+    alert(checkAge1(20));
+    alert(checkAge1(15));
+    alert(checkAge2(20));
+    alert(checkAge2(15));
+
+  </script>
+</body>
+</html>
